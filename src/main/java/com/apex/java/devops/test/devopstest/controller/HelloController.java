@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
   @RequestMapping("/")
   public String Hello(){
-      String msg = "This is from apex devops test";
+      String msg = "This is from apex devops test, new batch";
       System.out.println(msg);
       return msg;
   }
