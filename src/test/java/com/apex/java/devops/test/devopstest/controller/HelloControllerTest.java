@@ -1,6 +1,7 @@
 package com.apex.java.devops.test.devopstest.controller;
 
 import com.apex.java.devops.test.devopstest.DevopsTestApplication;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;
@@ -38,6 +39,7 @@ public void after() throws Exception {
 public void testHello() throws Exception { 
 //TODO: Test goes here...
     helloController.Hello();
+    Assert.assertTrue(false);
 } 
 
 
