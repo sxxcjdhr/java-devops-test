@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
   @RequestMapping("/")
   public String Hello(boolean flag){
-      String msg = "This is from apex devops test";
+      String msg = "Apex is good company";
       String repos = "git repos";
-      String batch = "batch 1";
+      String batch = "batch 2";
       String flagInfo = flag ? "flag is on" : "flag is off";
 
       String text = String.join("<br>", msg, repos, batch, flagInfo);
