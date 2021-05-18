@@ -13,6 +13,7 @@ class HelloControllerTest {
     @Test
     void hello() {
         helloController.Hello(true);
+        helloController.Hello(false);
         //Assert.assertTrue(false);
     }
 }
