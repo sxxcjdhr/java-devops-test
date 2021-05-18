@@ -14,9 +14,9 @@ public class HelloController {
   public String Hello(boolean flag){
       String msg;
       if (flag){
-          msg = "This is from apex devops test, abc, flag is on";
+          msg = "This is from apex devops test, batch1, flag is on";
       }else{
-          msg = "This is from apex devops test, abc, flag is off";
+          msg = "This is from apex devops test, batch1, flag is off";
       }
       System.out.println(msg);
       return msg;
