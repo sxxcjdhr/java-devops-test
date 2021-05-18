@@ -17,7 +17,7 @@ public class HelloController {
       String batch = "batch 1";
       String flagInfo = flag ? "flag is on" : "flag is off";
 
-      String text = String.join("\n", msg, repos, batch, flagInfo);
+      String text = String.join("<br>", msg, repos, batch, flagInfo);
       System.out.println(text);
       return text;
   }
