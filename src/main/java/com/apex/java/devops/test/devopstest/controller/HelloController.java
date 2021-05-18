@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
   @RequestMapping("/")
   public String Hello(boolean flag){
-      String msg;
-      if (flag){
-          msg = "This is from apex devops test git repos, batch1, flag is on";
-      }else{
-          msg = "This is from apex devops test git repos, batch1, flag is off";
-      }
-      System.out.println(msg);
-      return msg;
+      String msg = "This is from apex devops test";
+      String repos = "git repos";
+      String batch = "batch 1";
+      String flagInfo = flag ? "flag is on" : "flag is off";
+
+      String text = String.join("\n", msg, repos, batch, flagInfo);
+      System.out.println(text);
+      return text;
   }
 }
